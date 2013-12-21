@@ -1,2 +1,3 @@
 name: DESI - A Kerbal Space Program Blog
 pygments: false
+permalink : /:categories/:title
