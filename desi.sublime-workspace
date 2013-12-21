@@ -508,6 +508,15 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Matty/Documents/GitHub/DESI/_drafts/polaris-three.md",
+		"/C/Users/Matty/Documents/GitHub/DESI/_drafts/munar-two.md",
+		"/C/Users/Matty/Documents/GitHub/DESI/_drafts/polaris-two.md",
+		"/C/Users/Matty/Documents/GitHub/DESI/_drafts/polaris-one.md",
+		"/C/Users/Matty/Documents/GitHub/DESI/_drafts/munar-one",
+		"/C/Users/Matty/Documents/GitHub/DESI/_drafts/icarus.md",
+		"/C/Users/Matty/Documents/GitHub/DESI/_config.yml",
+		"/C/Users/Matty/Documents/GitHub/DESI/_posts/2013-12-21-welcome-to-jekyll.markdown",
+		"/C/Users/Matty/Documents/GitHub/DESI/_site/jekyll/update/2013/12/21/welcome-to-jekyll.html",
 		"/C/Users/Matty/Downloads/action_jackson.zip",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/mattycollins-progress.todo",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
@@ -626,16 +635,7 @@
 		"/C/xampp/htdocs/ee/templates/default_site/_page/page__default.html",
 		"/C/xampp/htdocs/ee/templates/default_site/_page/index.html",
 		"/C/xampp/htdocs/ee/templates/default_site/_page.group/index.html",
-		"/C/xampp/htdocs/ee/templates/default_site/blog.group/single.html",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExpressionEngine.sublime-settings",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/LiveReload.sublime-settings",
-		"/C/xampp/htdocs/ee/templates/default_site/blog.group/index.html.old.html",
-		"/C/xampp/htdocs/ee/templates/default_site/_content.group/blog.html",
-		"/C/xampp/htdocs/ee/templates/default_site/blog.group/blog__item.html",
-		"/C/xampp/htdocs/ee/templates/default_site/blog.group/blog__item",
-		"/C/xampp/htdocs/ee/ee-demo.sublime-project",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
-		"/C/xampp/htdocs/ee/themes/standard/css/config.rb"
+		"/C/xampp/htdocs/ee/templates/default_site/blog.group/single.html"
 	],
 	"find":
 	{
@@ -654,6 +654,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"	",
+			"true",
 			"key",
 			"	",
 			"space",
@@ -779,9 +781,7 @@
 			"naviconText",
 			"scroll",
 			"space",
-			"show",
-			"hidden",
-			"white"
+			"show"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -888,6 +888,26 @@
 		"selected_items":
 		[
 			[
+				"dra",
+				"_drafts/polaris-two.md"
+			],
+			[
+				"draf",
+				"_drafts/polaris-three.md"
+			],
+			[
+				"we",
+				"_posts/2013-12-21-welcome-to-jekyll.markdown"
+			],
+			[
+				"wec",
+				"_site/jekyll/update/2013/12/21/welcome-to-jekyll.html"
+			],
+			[
+				"conf",
+				"_config.yml"
+			],
+			[
 				"test",
 				"_posts/2013-11-10-test.md"
 			],
@@ -902,10 +922,6 @@
 			[
 				"main",
 				"giraffe/scripts/main.js"
-			],
-			[
-				"conf",
-				"_config.yml"
 			],
 			[
 				"read",
