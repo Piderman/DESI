@@ -4,12 +4,4 @@ layout: default
 collection landing page of <cite>Polaris</cite> program<br/>
 
 
-{% for page in site.pages %}
-<ul>
-	{% if page.mission__category == "Polaris" %}
-	<li>
-		<a href="{{page.url}}">{{page.title}}</a>
-	</li>
-	{% endif %}
-</ul>
-{% endfor %}
+{% include mission__list.html collection="Polaris"  %}

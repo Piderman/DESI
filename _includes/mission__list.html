@@ -1,5 +1,10 @@
+<small>in loop</small> Landing page of the <cite>{{inclide.collection}}</cite> program
 {% for page in site.pages %}
+<ul>
 	{% if page.mission__category == include.collection %}
+	<li>
 		<a href="{{page.url}}">{{page.title}}</a>
+	</li>
 	{% endif %}
+</ul>
 {% endfor %}
