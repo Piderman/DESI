@@ -1,10 +1,11 @@
 ---
 layout: mission__item
 title: Munar One
-categories: mission
+collection: mission
 
 mission__crew: NA
 mission__type: Flyby
+mission__category: Munar
 
 mission__spacecraft : Stayputnik Mk1
 mission__id : M004
