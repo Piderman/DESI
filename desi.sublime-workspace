@@ -367,6 +367,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_includes/mission__list.html",
+			"settings":
+			{
+				"buffer_size": 185,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "missions/polaris/index.html",
+			"settings":
+			{
+				"buffer_size": 136,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
 	"command_palette":
@@ -374,6 +390,14 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"liq",
+				"Set Syntax: HTML (Liquid)"
+			],
+			[
+				"syn liq",
+				"Set Syntax: HTML (Liquid)"
+			],
 			[
 				"ruby",
 				"Set Syntax: Ruby"
@@ -491,7 +515,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 395.0
+		"width": 514.0
 	},
 	"console":
 	{
@@ -508,6 +532,7 @@
 	},
 	"file_history":
 	[
+		"/Users/matty/Git/DESI/desi.sublime-project",
 		"/C/Users/Matty/Documents/GitHub/DESI/_drafts/polaris-three.md",
 		"/C/Users/Matty/Documents/GitHub/DESI/_drafts/munar-two.md",
 		"/C/Users/Matty/Documents/GitHub/DESI/_drafts/polaris-two.md",
@@ -634,8 +659,7 @@
 		"/C/xampp/htdocs/ee/templates/default_site/blog.group/post.html",
 		"/C/xampp/htdocs/ee/templates/default_site/_page/page__default.html",
 		"/C/xampp/htdocs/ee/templates/default_site/_page/index.html",
-		"/C/xampp/htdocs/ee/templates/default_site/_page.group/index.html",
-		"/C/xampp/htdocs/ee/templates/default_site/blog.group/single.html"
+		"/C/xampp/htdocs/ee/templates/default_site/_page.group/index.html"
 	],
 	"find":
 	{
@@ -654,6 +678,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Documents",
 			"	",
 			"true",
 			"key",
@@ -780,8 +805,7 @@
 			"naviconElem",
 			"naviconText",
 			"scroll",
-			"space",
-			"show"
+			"space"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -825,13 +849,67 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_includes/mission__list.html",
+					"settings":
+					{
+						"buffer_size": 185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Siteleaf Liquid Syntax/Syntaxes/HTML (Liquid).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 1,
+					"file": "missions/polaris/index.html",
+					"settings":
+					{
+						"buffer_size": 136,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								136,
+								136
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Siteleaf Liquid Syntax/Syntaxes/HTML (Liquid).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -863,7 +941,7 @@
 		"cols":
 		[
 			0.0,
-			0.737799336776,
+			0.511181905135,
 			1.0
 		],
 		"rows":
@@ -1217,7 +1295,7 @@
 		[
 			[
 				"",
-				"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/mattycollins.com.au"
+				"/Users/matty/Git/jekyll/jekyll.sublime-project"
 			]
 		],
 		"width": 380.0
