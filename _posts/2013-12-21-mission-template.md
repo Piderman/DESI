@@ -3,16 +3,16 @@ layout: mission__item
 title: Mission Template
 collection: mission
 
-mission__crew: ([crew], NA)
-mission__type: [Flyby, Orbiter, Lander, Rover]
+mission__crew:  crew or NA
+mission__type: Flyby or Orbiter or Lander or Rover
 mission__category: Polaris
 
 mission__spacecraft : []
-mission__id : R/M###
+mission__id : R or M ###
 mission__rocket : NA
 
 mission__destination: body
-mission__outcome : [Success, Failure, Critical Failure]
+mission__outcome : Success or Failure or Critical Failure
 ---
 <!-- small intro, delete comment -->
 missionName was lorem ipsum dolor sit amet, consectetur adipisicing elit. consequuntur, atque, vitae quos earum et doloremque error repellat illum dignissimos itaque.

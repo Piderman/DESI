@@ -1,4 +1,15 @@
 ---
 layout: default
 ---
-collection landing page of <cite>Munar</cite> program
+collection landing page of <cite>Munar</cite> program<br/>
+
+
+{% for page in site.pages %}
+<ul>
+	{% if page.mission__category == "Munar" %}
+	<li>
+		<a href="{{page.url}}">{{page.title}}</a>
+	</li>
+	{% endif %}
+</ul>
+{% endfor %}
