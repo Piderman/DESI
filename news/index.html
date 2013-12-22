@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<p>this is the news list</p>
+
+{% for post in site.posts  %}
+	{% if post.categories contains 'news' %}
+		{{post.title}}
+		{{ post.content | split: '<!-- /summary -->' | first }}
+		<img src="{{ post.news__image }}">
+	{% endif %}
+{% endfor %}
