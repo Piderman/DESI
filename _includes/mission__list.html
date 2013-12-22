@@ -1,7 +1,5 @@
-{% assign mission = include.collection %}
-
-{% for page in site.pages  %}
-	{% if page.mission__category = mission %}
+{% for page in site.pages %}
+	{% if page.mission__category == include.collection %}
 		<a href="{{page.url}}">{{page.title}}</a>
 	{% endif %}
 {% endfor %}

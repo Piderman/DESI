@@ -25,3 +25,5 @@ Polaris I was tasked with completing one orbit of Kerbin and landing at its Nort
 
 ##Mission Details
 Polaris I was not the first vehicle to reach space, but it was the first to successfully complete both an orbit and planned de-orbit. After one rotation of Kerbin (due to limited power) Jeb fired retrograde, detached from the launch vehicle and touched down on the north pole.
+
+![Polaris I in orbit](/assets/polaris-one.jpg)
