@@ -9,3 +9,9 @@
     The Munar project was the first attempt to study another body
     other than Kerbol. Fearful of what the Mun was, scientist sent robot
     probes to suss it out.
+
+- name: Icarus
+  description: >
+    Icarus serves to figure out exactly what "space" is. It deals with
+    all things orbital and may one day pave the way for permanent
+    resendacy of Kerbals in space.
