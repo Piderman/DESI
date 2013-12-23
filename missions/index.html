@@ -1,1 +1,15 @@
-index.html
+---
+layout: default
+title: Missions
+---
+
+<p>behold, a catalogue of all DESI missions.</p>
+
+<ul>
+{% for program in site.data.programs %}
+	<li>
+		<a href="/missions/{{program.name | downcase }}">{{program.name}}</a>
+		<p>{{program.description}}</p>
+	</li>
+{% endfor %}
+</ul>

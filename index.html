@@ -1,13 +1,43 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Deep Exploration of Space Initiative
 ---
-
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<div>
+	// @fixme: missions rotator 
+</div>
+<div>
+	<h2>News and updates</h2>
+	{% include collection/news__list.html mode="short" %}
+</div>
+<div class="m-portals">
+	<div class="portal">
+		<h3 class="portal__title">About DESI</h3>
+		<div class="portal__img"></div>
+		<p class="portal__text">
+			Who are you, my warranty?! Stop it, stop it. It's fine. I will 'destroy' you! Bender, this is Fry's decision
+		</p>
+		<a href="/about" class="portal__link">
+			read more <span class="offscreen">about DESI</span>
+		</a>
+	</div>
+	<div class="portal">
+		<h3 class="portal__title">VAB</h3>
+		<div class="portal__img"></div>
+		<p class="portal__text">
+			You won't have time for sleeping, soldier, not with all the bed making you'll be doing.
+		</p>
+		<a href="/vab" class="portal__link">
+			read more <span class="offscreen">about the VAB</span>
+		</a>
+	</div>
+	<div class="portal">
+		<h3 class="portal__title">Gallery</h3>
+		<div class="portal__img"></div>
+		<p class="portal__text">
+			Oh Leela! You're the only person I could turn to; you're the only person who ever loved me. Stop! Don't shoot fire stick in space canoe
+		</p>
+		<a href="#" class="portal__link">
+			view more <span class="offscreen">gallery images</span>
+		</a>
+	</div>
 </div>

@@ -1,10 +1,11 @@
 <small>in loop</small> Landing page of the <cite>{{inclide.collection}}</cite> program
+<ul style="padding: 20px 0;">
 {% for page in site.pages %}
-<ul>
-	{% if page.mission__category == include.collection %}
+	{% if include.collection == page.mission__category %}
 	<li>
 		<a href="{{page.url}}">{{page.title}}</a>
+		{{page.mission__crew}}, {{page.mission__type}}, {{page.mission__outcome}}
 	</li>
 	{% endif %}
-</ul>
 {% endfor %}
+</ul>

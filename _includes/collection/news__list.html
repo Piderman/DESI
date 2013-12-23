@@ -1,0 +1,21 @@
+{% comment %}
+	keep the logic for news lists is one place
+	this may turn out to be a terrible idea #yolo
+{% endcomment %}
+{% assign mode = include.mode %}
+
+<div class="m-news">
+	<ol>
+	{% for post in site.posts %}
+		<li class="clearfix">
+			<div class="media__img m-img">
+				<img src="{{post.news__image}}" alt="">
+			</div>
+			<div class="media__content">
+				<a href="{{post.url}}">{{post.title}}</a>
+				{{ post.content | split: '<!-- /summary -->' | first }}
+			</div>
+		</li>
+	{% endfor %}
+	</ol>
+</div>
