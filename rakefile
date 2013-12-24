@@ -51,8 +51,8 @@ desc "create a mission page"
 task :mission do
 
   # feels weird writing ["string of title"], prefer prompt
-  mission__name =  ask "Mission category:"
-  mission__number =  ask "increment number:"
+  mission__name =  ask "Mission family:"
+  mission__number =  ask "Roman number:"
   template__mission(mission__name, mission__number)
 end
 
@@ -61,8 +61,8 @@ def template__mission(mission__name, mission__number)
   # make new post w today's date
   extension = "md"
   dir = "missions/"
-  fileName = post__name.downcase + "-" + "mission__number"
-  newFile = dir + "#{fileName}." + extension
+  fileName = mission__name.downcase + "-" + mission__number
+  newFile = dir + "#{mission__name}/#{fileName}." + extension
 
   if File.exists? newFile then
     puts "#{newFile} already exists. cheese it!"
@@ -75,35 +75,34 @@ def template__mission(mission__name, mission__number)
     # standard header
     mission.puts("---")
     mission.puts("layout : mission__item")
-    mission.puts("title: #{mission__name} + #{mission__number}")
+    mission.puts("title: #{mission__name} #{mission__number}")
     mission.puts("collection: mission")
 
-    mission.puts("mission__crew: name | NA")
+    mission.puts("\nmission__crew: name | NA")
     mission.puts("mission__type: Flyby | Orbiter | Lander | Rover")
     mission.puts("mission__category: #{mission__name}")
 
-    mission.puts("mission__spacecraft: name | NA")
+    mission.puts("\nmission__spacecraft: name | NA")
     mission.puts("mission__id: R | M ###")
     mission.puts("mission__rocket: name | NA")
 
-    mission.puts("mission__destination: body site?")
+    mission.puts("\nmission__destination: body site?")
     mission.puts("mission__outcome: Success | Failure | Critical Failure")
-
     mission.puts("---")
 
     # content time
     mission.puts("<!-- small intro, delete comment -->")
-    mission.puts("###Background")
+    mission.puts("\n###Background")
     mission.puts("unlocks, history to the mission")
-    mission.puts("###Craft")
+    mission.puts("\n###Craft")
     mission.puts("modified in any way, existing setup")
-    mission.puts("###Objective")
+    mission.puts("\n###Objective")
     mission.puts("Purpose of the mission")
-    mission.puts("##Mission Details")
+    mission.puts("\n##Mission Details")
     mission.puts("Changes to mission plan, pics")
   end
 
-  puts "created #{post__name}.#{extension}"
+  puts "created #{mission__name}/#{mission__name} #{mission__number}"
 
   # open file and start writing?
   sh "subl -w #{newFile}:22"
