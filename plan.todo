@@ -15,7 +15,14 @@ homepage:
   ☐ portal__VAB
   ☐ portal__gallery
 
+rake:
+  ☐ news
+  ☐ mission ( how to select category, via flag?)
 
+about:
+  ☐ content "about" DESI
+  ☐ content about the site
+  ☐ credits for KSP and Squad
 
 what is DESI:
 -DESI explore the Kerbol system, conducting experiments for the advancement of all kerbals

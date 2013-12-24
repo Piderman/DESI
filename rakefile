@@ -1,0 +1,110 @@
+require 'net/ftp'
+require 'rubygems'
+require 'highline/import'
+
+desc "create a news post"
+task :news do
+
+  # feels weird writing ["string of title"], prefer prompt
+  post__name =  ask "Article title:"
+  template__news(post__name)
+end
+
+desc "build news file"
+def template__news(post__name)
+  # make new post w today's date
+  date = Time.new.strftime('%Y-%m-%d')
+  extension = "md"
+  dir = "_posts/"
+  fileName = post__name.downcase.gsub( /[^a-zA-Z0-9_\.]/, '-')
+  newFile = dir + date + "-#{fileName}." + extension
+
+  if File.exists? newFile then
+    puts "#{newFile} already exists. cheese it!"
+    return
+  end
+
+  # file needs my "boiler plate"
+  File.open(newFile, "wb") do |post|
+
+    # standard header
+    post.puts("---")
+    post.puts("layout : news__item")
+    post.puts("title: #{post__name}")
+    post.puts("categories: news | tech | mission")
+    post.puts("excerpt : !required")
+    post.puts("---")
+
+    # content time
+    post.puts("!required summary text")
+    post.puts("<!-- /summary -->")
+    post.puts("\n!required content")
+  end
+
+  puts "created #{post__name}.#{extension}"
+
+  # open file and start writing?
+  sh "subl -w #{newFile}:12"
+end
+
+desc "create a mission page"
+task :mission do
+
+  # feels weird writing ["string of title"], prefer prompt
+  mission__name =  ask "Mission category:"
+  mission__number =  ask "increment number:"
+  template__mission(mission__name, mission__number)
+end
+
+desc "build mission file"
+def template__mission(mission__name, mission__number)
+  # make new post w today's date
+  extension = "md"
+  dir = "missions/"
+  fileName = post__name.downcase + "-" + "mission__number"
+  newFile = dir + "#{fileName}." + extension
+
+  if File.exists? newFile then
+    puts "#{newFile} already exists. cheese it!"
+    return
+  end
+
+  # file needs my "boiler plate"
+  File.open(newFile, "wb") do |mission|
+
+    # standard header
+    mission.puts("---")
+    mission.puts("layout : mission__item")
+    mission.puts("title: #{mission__name} + #{mission__number}")
+    mission.puts("collection: mission")
+
+    mission.puts("mission__crew: name | NA")
+    mission.puts("mission__type: Flyby | Orbiter | Lander | Rover")
+    mission.puts("mission__category: #{mission__name}")
+
+    mission.puts("mission__spacecraft: name | NA")
+    mission.puts("mission__id: R | M ###")
+    mission.puts("mission__rocket: name | NA")
+
+    mission.puts("mission__destination: body site?")
+    mission.puts("mission__outcome: Success | Failure | Critical Failure")
+
+    mission.puts("---")
+
+    # content time
+    mission.puts("<!-- small intro, delete comment -->")
+    mission.puts("###Background")
+    mission.puts("unlocks, history to the mission")
+    mission.puts("###Craft")
+    mission.puts("modified in any way, existing setup")
+    mission.puts("###Objective")
+    mission.puts("Purpose of the mission")
+    mission.puts("##Mission Details")
+    mission.puts("Changes to mission plan, pics")
+  end
+
+  puts "created #{post__name}.#{extension}"
+
+  # open file and start writing?
+  sh "subl -w #{newFile}:22"
+end
