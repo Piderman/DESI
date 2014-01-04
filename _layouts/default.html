@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -7,7 +11,13 @@
 		<meta name="viewport" content="width=device-width">
 
 		<link href='//fonts.googleapis.com/css?family=Iceland|Exo+2:200,600' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/css/main.css">
+		<!--[if (lt IE 9) & (!IEMobile)]>
+			<link href="/standard/styles/nomedia.css" rel="stylesheet">
+		<![endif]-->
+
+		<!--[if (gte IE 9) | (IEMobile)]><!-->
+			<link href="/standard/styles/screen.css" rel="stylesheet">
+		<!--<![endif]-->
 
 	</head>
 	<body>
