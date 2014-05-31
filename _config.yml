@@ -1,3 +1,9 @@
 name: DESI - A Kerbal Space Program Blog
 pygments: false
 permalink : /:categories/:title
+exclude : [
+  # dont want to ignore .map as we need it to debug. deploy process should remove it
+  "*.sublime-*",
+  "package.json",
+  "gulpfile.js"
+]

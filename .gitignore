@@ -1,3 +1,4 @@
 _site
 *.sublime-workspace
 .sass-cache/
+node_modules/

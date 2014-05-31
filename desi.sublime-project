@@ -3,7 +3,11 @@
 	[
 		{
 			"path": "/Users/matty/Git/DESI",
-			"folder_exclude_patterns": [".sass-cache", "_site"]
+			"folder_exclude_patterns": [
+				".sass-cache",
+				"_site",
+				"node_modules"
+			]
 		},
 		{
 			"path": "C:/Users/Matty/Documents/GitHub/DESI",
