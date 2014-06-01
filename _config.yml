@@ -5,5 +5,6 @@ exclude : [
   # dont want to ignore .map as we need it to debug. deploy process should remove it
   "*.sublime-*",
   "package.json",
-  "gulpfile.js"
+  "gulpfile.js",
+  "node_modules"
 ]
