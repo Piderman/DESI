@@ -31,7 +31,7 @@ def template__news(post__name)
     post.puts("---")
     post.puts("layout : news__item")
     post.puts("title: #{post__name}")
-    post.puts("categories: news | tech | mission")
+    post.puts("categories: news | tech | mission | contract")
     post.puts("excerpt : !required")
     post.puts("---")
 
