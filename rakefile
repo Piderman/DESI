@@ -92,13 +92,13 @@ def template__mission(mission__name, mission__number)
 
     # content time
     mission.puts("<!-- small intro, delete comment -->")
-    mission.puts("\n###Background")
+    mission.puts("\n### Background")
     mission.puts("unlocks, history to the mission")
-    mission.puts("\n###Craft")
+    mission.puts("\n### Craft")
     mission.puts("modified in any way, existing setup")
-    mission.puts("\n###Objective")
+    mission.puts("\n### Objective")
     mission.puts("Purpose of the mission")
-    mission.puts("\n##Mission Details")
+    mission.puts("\n## Mission Details")
     mission.puts("Changes to mission plan, pics")
   end
 

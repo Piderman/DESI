@@ -1,3 +1,9 @@
+- name: Moho
+  description : >
+    Reach LKO and understand how to get Kerbals and equipment to and
+    from orbit. The first program of many which deals with simple
+    launch vehicles and basic orbital opperations
+
 - name : Polaris
   description: >
     Polars attempts to answer many questions about the planet such as
