@@ -15,6 +15,7 @@ mission__destination: Kerbin
 mission__outcome: Success
 ---
 <!-- small intro, delete comment -->
+![first orbit](/assets/first-orbit.jpg)
 
 ### Background
 Moho 1 lacked the DV to reach orbit so a news launcher was designed using new technology and approaches to building rockets.
