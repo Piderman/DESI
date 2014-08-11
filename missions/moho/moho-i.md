@@ -7,9 +7,9 @@ mission__crew: Jeb
 mission__type: Test
 mission__category: Moho
 
-mission__spacecraft: Moho LV
+mission__spacecraft: Moho CM
 mission__id: M 001
-mission__rocket: name | NA
+mission__rocket: Moho LV
 
 mission__destination: Kerbin Atmosphere
 mission__outcome: Success

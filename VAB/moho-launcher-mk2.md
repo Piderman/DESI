@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Moho Launch Vehicle mk2
+title: Moho 2LV
 vab__type: launch
 cost: 
 deltaV: 5039

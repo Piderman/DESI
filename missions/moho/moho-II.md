@@ -7,11 +7,11 @@ mission__crew: Bill
 mission__type: Orbiter
 mission__category: Moho
 
-mission__spacecraft: Moho LV
+mission__spacecraft: Moho CM
 mission__id: M 002
-mission__rocket: MLV2
+mission__rocket: Moho LV2
 
-mission__destination: Kerbin
+mission__destination: Kerbin LKO
 mission__outcome: Success
 ---
 <!-- small intro, delete comment -->
