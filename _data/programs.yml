@@ -3,21 +3,56 @@
     Reach LKO and understand how to get Kerbals and equipment to and
     from orbit. The first program of many which deals with simple
     launch vehicles and basic orbital opperations
+  missions :
+    - reach LKO
+    - esatablish coms network v1 (three basic geo probes)
+    - develop a manned payload delivery system to get from KSC to LKO
 
-- name : Polaris
-  description: >
-    Polars attempts to answer many questions about the planet such as
-    what is made up of, and how did we get here.
-    It was commissioned to something
+- name : Eve
+  requires: Moho coms network
+  description : >
+    tour the Mun
+  missions :
+    - land probe on mun
+    - orbit mun (probe)
+    - manned mun orbit
+    - land a Kerbal on Mun
+    - land a Kerbal on Minmus
 
-- name: Munar
-  description: >
-    The Munar project was the first attempt to study another body
-    other than Kerbol. Fearful of what the Mun was, scientist sent robot
-    probes to suss it out.
+- name : Kerbin
+  description : >
+    permanent resendacy in LKO
+  missions :
+    - created LKO Lab (small crew)
+    - create MKO station as port for interplanitary missions
 
-- name: Icarus
-  description: >
-    Icarus serves to figure out exactly what "space" is. It deals with
-    all things orbital and may one day pave the way for permanent
-    resendacy of Kerbals in space.
+- name : Duna
+  requires: Kerbin MKO station
+  description : >
+    explore inner planets
+  missions :
+    - probes on inner planets
+
+- name : Jool
+  description : >
+    explore outer planets
+  missions :
+    - probes on outer planets
+
+# - name : Polaris
+#   description: >
+#     Polars attempts to answer many questions about the planet such as
+#     what is made up of, and how did we get here.
+#     It was commissioned to something
+
+# - name: Munar
+#   description: >
+#     The Munar project was the first attempt to study another body
+#     other than Kerbol. Fearful of what the Mun was, scientist sent robot
+#     probes to suss it out.
+
+# - name: Icarus
+#   description: >
+#     Icarus serves to figure out exactly what "space" is. It deals with
+#     all things orbital and may one day pave the way for permanent
+#     resendacy of Kerbals in space.
